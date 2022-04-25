@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		40007BD9237520BA006A07D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BD8237520BA006A07D1 /* AppDelegate.swift */; };
+		40007BDD237520BA006A07D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40007BDC237520BA006A07D1 /* Assets.xcassets */; };
+		40007BE0237520BA006A07D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40007BDE237520BA006A07D1 /* Main.storyboard */; };
+		40007BF1237523FA006A07D1 /* KiminoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF0237523FA006A07D1 /* KiminoView.swift */; };
+		40007BF323752D6F006A07D1 /* KiminoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF223752D6F006A07D1 /* KiminoWindow.swift */; };
+		CC2BF07B2816283B0075592F /* StatusBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07A2816283B0075592F /* StatusBarIcon.swift */; };
+		CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */; };
+		CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */; };
+		CC9C9ACE23ABC7500064C808 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACD23ABC7500064C808 /* ClockModel.swift */; };
+		CCF615042816196600CE1F7D /* libLEDTextLabel.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCF614F22816148D00CE1F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF279A50267FFCBB00E349F8;
+			remoteInfo = LEDTextLabel;
+		};
+		CCF614F42816148D00CE1F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BF279A69268005FD00E349F8;
+			remoteInfo = Example;
+		};
+		CCF614F62816149600CE1F7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BF279A4F267FFCBB00E349F8;
+			remoteInfo = LEDTextLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		40007BD5237520BA006A07D1 /* kimino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kimino.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		40007BD8237520BA006A07D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		40007BDC237520BA006A07D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		40007BDF237520BA006A07D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		40007BE1237520BA006A07D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40007BE2237520BA006A07D1 /* kimino.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = kimino.entitlements; sourceTree = "<group>"; };
+		40007BF0237523FA006A07D1 /* KiminoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiminoView.swift; sourceTree = "<group>"; };
+		40007BF223752D6F006A07D1 /* KiminoWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiminoWindow.swift; sourceTree = "<group>"; };
+		CC2BF07A2816283B0075592F /* StatusBarIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarIcon.swift; sourceTree = "<group>"; };
+		CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtension.swift; sourceTree = "<group>"; };
+		CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiminoSettingsWindow.swift; sourceTree = "<group>"; };
+		CC9C9ACD23ABC7500064C808 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LEDTextLabel.xcodeproj; path = LEDTextLabel/LEDTextLabel.xcodeproj; sourceTree = "<group>"; };
+		CCF614F82816152D00CE1F7D /* kimino-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kimino-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40007BD2237520BA006A07D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCF615042816196600CE1F7D /* libLEDTextLabel.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40007BCC237520BA006A07D1 = {
+			isa = PBXGroup;
+			children = (
+				CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */,
+				40007BD7237520BA006A07D1 /* kimino */,
+				40007BD6237520BA006A07D1 /* Products */,
+				CCF615032816196600CE1F7D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		40007BD6237520BA006A07D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				40007BD5237520BA006A07D1 /* kimino.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		40007BD7237520BA006A07D1 /* kimino */ = {
+			isa = PBXGroup;
+			children = (
+				40007BD8237520BA006A07D1 /* AppDelegate.swift */,
+				CC2BF07A2816283B0075592F /* StatusBarIcon.swift */,
+				CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */,
+				CC9C9ACD23ABC7500064C808 /* ClockModel.swift */,
+				40007BF223752D6F006A07D1 /* KiminoWindow.swift */,
+				40007BF0237523FA006A07D1 /* KiminoView.swift */,
+				CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */,
+				40007BDC237520BA006A07D1 /* Assets.xcassets */,
+				40007BDE237520BA006A07D1 /* Main.storyboard */,
+				40007BE1237520BA006A07D1 /* Info.plist */,
+				40007BE2237520BA006A07D1 /* kimino.entitlements */,
+				CCF614F82816152D00CE1F7D /* kimino-Bridging-Header.h */,
+			);
+			path = kimino;
+			sourceTree = "<group>";
+		};
+		CCF614EE2816148D00CE1F7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */,
+				CCF614F52816148D00CE1F7D /* Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCF615032816196600CE1F7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		40007BD4237520BA006A07D1 /* kimino */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40007BE5237520BA006A07D1 /* Build configuration list for PBXNativeTarget "kimino" */;
+			buildPhases = (
+				40007BD1237520BA006A07D1 /* Sources */,
+				40007BD2237520BA006A07D1 /* Frameworks */,
+				40007BD3237520BA006A07D1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCF614F72816149600CE1F7D /* PBXTargetDependency */,
+			);
+			name = kimino;
+			productName = kimino;
+			productReference = 40007BD5237520BA006A07D1 /* kimino.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		40007BCD237520BA006A07D1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1330;
+				ORGANIZATIONNAME = Cocoa;
+				TargetAttributes = {
+					40007BD4237520BA006A07D1 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = 40007BD0237520BA006A07D1 /* Build configuration list for PBXProject "kimino" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 40007BCC237520BA006A07D1;
+			productRefGroup = 40007BD6237520BA006A07D1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CCF614EE2816148D00CE1F7D /* Products */;
+					ProjectRef = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				40007BD4237520BA006A07D1 /* kimino */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libLEDTextLabel.dylib;
+			remoteRef = CCF614F22816148D00CE1F7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CCF614F52816148D00CE1F7D /* Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Example.app;
+			remoteRef = CCF614F42816148D00CE1F7D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		40007BD3237520BA006A07D1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				40007BDD237520BA006A07D1 /* Assets.xcassets in Resources */,
+				40007BE0237520BA006A07D1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		40007BD1237520BA006A07D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */,
+				CC2BF07B2816283B0075592F /* StatusBarIcon.swift in Sources */,
+				40007BF1237523FA006A07D1 /* KiminoView.swift in Sources */,
+				CC9C9ACE23ABC7500064C808 /* ClockModel.swift in Sources */,
+				40007BF323752D6F006A07D1 /* KiminoWindow.swift in Sources */,
+				40007BD9237520BA006A07D1 /* AppDelegate.swift in Sources */,
+				CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCF614F72816149600CE1F7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LEDTextLabel;
+			targetProxy = CCF614F62816149600CE1F7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		40007BDE237520BA006A07D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				40007BDF237520BA006A07D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		40007BE3237520BA006A07D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		40007BE4237520BA006A07D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		40007BE6237520BA006A07D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FT787279D2;
+				INFOPLIST_FILE = kimino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.uwucocoa.kimino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/kimino/kimino-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		40007BE7237520BA006A07D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = FT787279D2;
+				INFOPLIST_FILE = kimino/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = moe.uwucocoa.kimino;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/kimino/kimino-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		40007BD0237520BA006A07D1 /* Build configuration list for PBXProject "kimino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40007BE3237520BA006A07D1 /* Debug */,
+				40007BE4237520BA006A07D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		40007BE5237520BA006A07D1 /* Build configuration list for PBXNativeTarget "kimino" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				40007BE6237520BA006A07D1 /* Debug */,
+				40007BE7237520BA006A07D1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 40007BCD237520BA006A07D1 /* Project object */;
+}

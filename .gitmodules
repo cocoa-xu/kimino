@@ -1,0 +1,3 @@
+[submodule "LEDTextLabel"]
+	path = LEDTextLabel
+	url = https://github.com/cocoa-xu/LEDTextLabel.git
