@@ -39,7 +39,7 @@ class StatusBarIcon: NSView {
     let ovalPathLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.lineWidth = 1.0
-        layer.strokeColor = NSColor.black.cgColor
+        layer.strokeColor = NSColor.textColor.cgColor
         layer.fillColor = NSColor.clear.cgColor
         return layer
     }()
@@ -47,7 +47,7 @@ class StatusBarIcon: NSView {
     let minutePathLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.lineWidth = 0.7
-        layer.strokeColor = NSColor.black.cgColor
+        layer.strokeColor = NSColor.textColor.cgColor
         layer.fillColor = NSColor.clear.cgColor
         return layer
     }()
@@ -55,7 +55,7 @@ class StatusBarIcon: NSView {
     let hourPathLayer: CAShapeLayer = {
         let layer = CAShapeLayer()
         layer.lineWidth = 0.8
-        layer.strokeColor = NSColor.black.cgColor
+        layer.strokeColor = NSColor.textColor.cgColor
         layer.fillColor = NSColor.clear.cgColor
         return layer
     }()
@@ -110,6 +110,7 @@ class StatusBarIcon: NSView {
     override func draw(_ dirtyRect: NSRect) {
         let transform = NSAffineTransform.init()
         transform.scaleX(by: self.scaleXMultiplier, yBy: self.scaleYMultiplier)
+        ovalPathLayer.strokeColor = NSColor.textColor.cgColor
         ovalPathLayer.path = transform.transform(ovalPath).cgPath
 
         let centrePoint = NSPoint(
@@ -126,6 +127,7 @@ class StatusBarIcon: NSView {
         mPath.move(to: centrePoint)
         mPath.line(to: minuteEndpoint)
         mPath.close()
+        minutePathLayer.strokeColor = NSColor.textColor.cgColor
         minutePathLayer.path = transform.transform(mPath).cgPath
 
         var currentHour = Double(self.hour)
@@ -140,6 +142,7 @@ class StatusBarIcon: NSView {
         hPath.move(to: centrePoint)
         hPath.line(to: hourEndpoint)
         hPath.close()
+        hourPathLayer.strokeColor = NSColor.textColor.cgColor
         hourPathLayer.path = transform.transform(hPath).cgPath
     }
 }
