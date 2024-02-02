@@ -402,6 +402,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2WV7J99MS;
+				HEADER_SEARCH_PATHS = LEDTextLabel/LEDTextLabel;
 				INFOPLIST_FILE = kimino/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -429,6 +430,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2WV7J99MS;
+				HEADER_SEARCH_PATHS = LEDTextLabel/LEDTextLabel;
 				INFOPLIST_FILE = kimino/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
