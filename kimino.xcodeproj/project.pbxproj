@@ -16,32 +16,9 @@
 		CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */; };
 		CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */; };
 		CC9C9ACE23ABC7500064C808 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACD23ABC7500064C808 /* ClockModel.swift */; };
-		CCF615042816196600CE1F7D /* libLEDTextLabel.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; };
+		CCFF04BA2B6CC78900E77ECE /* LEDDigitView.mm in Sources */ = {isa = PBXBuildFile; fileRef = CCFF04B72B6CC78900E77ECE /* LEDDigitView.mm */; };
+		CCFF04BB2B6CC78900E77ECE /* LEDTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = CCFF04B82B6CC78900E77ECE /* LEDTextLabel.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CCF614F22816148D00CE1F7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BF279A50267FFCBB00E349F8;
-			remoteInfo = LEDTextLabel;
-		};
-		CCF614F42816148D00CE1F7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = BF279A69268005FD00E349F8;
-			remoteInfo = Example;
-		};
-		CCF614F62816149600CE1F7D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = BF279A4F267FFCBB00E349F8;
-			remoteInfo = LEDTextLabel;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40007BD5237520BA006A07D1 /* kimino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kimino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,8 +33,11 @@
 		CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSBezierPathExtension.swift; sourceTree = "<group>"; };
 		CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiminoSettingsWindow.swift; sourceTree = "<group>"; };
 		CC9C9ACD23ABC7500064C808 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
-		CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LEDTextLabel.xcodeproj; path = LEDTextLabel/LEDTextLabel.xcodeproj; sourceTree = "<group>"; };
 		CCF614F82816152D00CE1F7D /* kimino-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "kimino-Bridging-Header.h"; sourceTree = "<group>"; };
+		CCFF04B62B6CC78900E77ECE /* LEDTextLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDTextLabel.h; sourceTree = "<group>"; };
+		CCFF04B72B6CC78900E77ECE /* LEDDigitView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LEDDigitView.mm; sourceTree = "<group>"; };
+		CCFF04B82B6CC78900E77ECE /* LEDTextLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LEDTextLabel.m; sourceTree = "<group>"; };
+		CCFF04B92B6CC78900E77ECE /* LEDDigitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LEDDigitView.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +45,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCF615042816196600CE1F7D /* libLEDTextLabel.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +54,6 @@
 		40007BCC237520BA006A07D1 = {
 			isa = PBXGroup;
 			children = (
-				CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */,
 				40007BD7237520BA006A07D1 /* kimino */,
 				40007BD6237520BA006A07D1 /* Products */,
 				CCF615032816196600CE1F7D /* Frameworks */,
@@ -96,6 +74,10 @@
 				40007BD8237520BA006A07D1 /* AppDelegate.swift */,
 				CC2BF07A2816283B0075592F /* StatusBarIcon.swift */,
 				CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */,
+				CCFF04B92B6CC78900E77ECE /* LEDDigitView.h */,
+				CCFF04B72B6CC78900E77ECE /* LEDDigitView.mm */,
+				CCFF04B62B6CC78900E77ECE /* LEDTextLabel.h */,
+				CCFF04B82B6CC78900E77ECE /* LEDTextLabel.m */,
 				CC9C9ACD23ABC7500064C808 /* ClockModel.swift */,
 				40007BF223752D6F006A07D1 /* KiminoWindow.swift */,
 				40007BF0237523FA006A07D1 /* KiminoView.swift */,
@@ -107,15 +89,6 @@
 				CCF614F82816152D00CE1F7D /* kimino-Bridging-Header.h */,
 			);
 			path = kimino;
-			sourceTree = "<group>";
-		};
-		CCF614EE2816148D00CE1F7D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */,
-				CCF614F52816148D00CE1F7D /* Example.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CCF615032816196600CE1F7D /* Frameworks */ = {
@@ -139,7 +112,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				CCF614F72816149600CE1F7D /* PBXTargetDependency */,
 			);
 			name = kimino;
 			productName = kimino;
@@ -173,35 +145,12 @@
 			mainGroup = 40007BCC237520BA006A07D1;
 			productRefGroup = 40007BD6237520BA006A07D1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CCF614EE2816148D00CE1F7D /* Products */;
-					ProjectRef = CCF614ED2816148D00CE1F7D /* LEDTextLabel.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				40007BD4237520BA006A07D1 /* kimino */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libLEDTextLabel.dylib;
-			remoteRef = CCF614F22816148D00CE1F7D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CCF614F52816148D00CE1F7D /* Example.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			path = Example.app;
-			remoteRef = CCF614F42816148D00CE1F7D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		40007BD3237520BA006A07D1 /* Resources */ = {
@@ -220,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CCFF04BA2B6CC78900E77ECE /* LEDDigitView.mm in Sources */,
 				CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */,
 				CC2BF07B2816283B0075592F /* StatusBarIcon.swift in Sources */,
 				40007BF1237523FA006A07D1 /* KiminoView.swift in Sources */,
@@ -227,18 +177,11 @@
 				40007BF323752D6F006A07D1 /* KiminoWindow.swift in Sources */,
 				40007BD9237520BA006A07D1 /* AppDelegate.swift in Sources */,
 				CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */,
+				CCFF04BB2B6CC78900E77ECE /* LEDTextLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		CCF614F72816149600CE1F7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = LEDTextLabel;
-			targetProxy = CCF614F62816149600CE1F7D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		40007BDE237520BA006A07D1 /* Main.storyboard */ = {
@@ -386,7 +329,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2WV7J99MS;
-				HEADER_SEARCH_PATHS = LEDTextLabel/LEDTextLabel;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = kimino/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -414,7 +357,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = V2WV7J99MS;
-				HEADER_SEARCH_PATHS = LEDTextLabel/LEDTextLabel;
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = kimino/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
