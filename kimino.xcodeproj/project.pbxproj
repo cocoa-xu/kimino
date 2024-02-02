@@ -12,7 +12,6 @@
 		40007BE0237520BA006A07D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40007BDE237520BA006A07D1 /* Main.storyboard */; };
 		40007BF1237523FA006A07D1 /* KiminoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF0237523FA006A07D1 /* KiminoView.swift */; };
 		40007BF323752D6F006A07D1 /* KiminoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF223752D6F006A07D1 /* KiminoWindow.swift */; };
-		CC1F5E3929B61D2000399546 /* libLEDTextLabel.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CC2BF07B2816283B0075592F /* StatusBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07A2816283B0075592F /* StatusBarIcon.swift */; };
 		CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */; };
 		CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */; };
@@ -43,20 +42,6 @@
 			remoteInfo = LEDTextLabel;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CC8F1D582816416100494CF5 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				CC1F5E3929B61D2000399546 /* libLEDTextLabel.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		40007BD5237520BA006A07D1 /* kimino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kimino.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,7 +135,6 @@
 				40007BD1237520BA006A07D1 /* Sources */,
 				40007BD2237520BA006A07D1 /* Frameworks */,
 				40007BD3237520BA006A07D1 /* Resources */,
-				CC8F1D582816416100494CF5 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -396,7 +380,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -424,7 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
