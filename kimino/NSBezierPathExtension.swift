@@ -30,8 +30,12 @@ extension NSBezierPath {
             case .closePath:
                 path.closeSubpath()
 
+            case .cubicCurveTo:
+                break
+              
+            case .quadraticCurveTo:
+                break
             @unknown default:
-                print("fuck me")
                 break
             }
         }

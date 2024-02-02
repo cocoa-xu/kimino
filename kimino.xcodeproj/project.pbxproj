@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,9 @@
 		40007BE0237520BA006A07D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40007BDE237520BA006A07D1 /* Main.storyboard */; };
 		40007BF1237523FA006A07D1 /* KiminoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF0237523FA006A07D1 /* KiminoView.swift */; };
 		40007BF323752D6F006A07D1 /* KiminoWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40007BF223752D6F006A07D1 /* KiminoWindow.swift */; };
+		CC1F5E3929B61D2000399546 /* libLEDTextLabel.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CC2BF07B2816283B0075592F /* StatusBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07A2816283B0075592F /* StatusBarIcon.swift */; };
 		CC2BF07E28162BCF0075592F /* NSBezierPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2BF07D28162BCF0075592F /* NSBezierPathExtension.swift */; };
-		CC8F1D572816416100494CF5 /* libLEDTextLabel.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		CC9C9ACC23ABB31F0064C808 /* KiminoSettingsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACB23ABB31F0064C808 /* KiminoSettingsWindow.swift */; };
 		CC9C9ACE23ABC7500064C808 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C9ACD23ABC7500064C808 /* ClockModel.swift */; };
 		CCF615042816196600CE1F7D /* libLEDTextLabel.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF614F32816148D00CE1F7D /* libLEDTextLabel.dylib */; };
@@ -51,7 +51,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CC8F1D572816416100494CF5 /* libLEDTextLabel.dylib in Embed Libraries */,
+				CC1F5E3929B61D2000399546 /* libLEDTextLabel.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,8 +168,9 @@
 		40007BCD237520BA006A07D1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1030;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = Cocoa;
 				TargetAttributes = {
 					40007BD4237520BA006A07D1 = {
@@ -271,6 +272,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -302,9 +304,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -319,7 +323,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -364,9 +369,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -375,7 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -390,15 +397,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FT787279D2;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = V2WV7J99MS;
 				INFOPLIST_FILE = kimino/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.uwucocoa.kimino;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/kimino/kimino-Bridging-Header.h";
@@ -412,15 +424,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = kimino/kimino.entitlements;
 				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = FT787279D2;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = V2WV7J99MS;
 				INFOPLIST_FILE = kimino/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Kimino;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = moe.uwucocoa.kimino;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "${SRCROOT}/kimino/kimino-Bridging-Header.h";
