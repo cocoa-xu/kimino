@@ -35,6 +35,7 @@ extension NSBezierPath {
               
             case .quadraticCurveTo:
                 break
+
             @unknown default:
                 break
             }
